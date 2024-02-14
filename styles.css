@@ -2,12 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Rubik+Pixels&display=swap');
 
 a{
-    font-family: 'Rubik Pixels', system-ui;
+    font-family: 'Pixelify Sans', system-ui;
     font-weight: lighter;
 }
 
 body {
-    font-family: 'Pixelify Sans', sans-serif;
+    background-color: rgb(42, 65, 149); /* page color */
+    color: rgb(160, 220, 249); 
+}
+body {
+    font-family: 'Rubik Pixels', sans-serif;
     font-weight: bold;
     margin: 20px
 }
@@ -42,5 +46,8 @@ h1{
 }
 
 .navbar li{
-    float: left;
+    float:left;
+    font-size:20px;
+    margin-left: 60px;
+    margin-right: 70px;
 }
