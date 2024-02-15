@@ -7,7 +7,7 @@ a{
 }
 
 body {
-    background-color: rgb(42, 65, 149); /* page color */
+    background-color: rgb(32, 54, 136); /* page color */
     color: rgb(160, 220, 249); 
 }
 body {
@@ -23,6 +23,20 @@ main{
 h1{
     text-align: center;
 }
+
+.text-center{
+    text-align:center;
+}
+.picture-asthetics{
+    background-color: rgb(124, 200, 255);
+    padding:7px;
+    border-radius:20px;
+}
+
+
+
+
+
 
 .navbar ul{
     list-style-type: none;
@@ -51,3 +65,7 @@ h1{
     margin-left: 60px;
     margin-right: 70px;
 }
+
+
+
+
