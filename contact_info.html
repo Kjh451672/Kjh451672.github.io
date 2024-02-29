@@ -30,11 +30,85 @@
 <img class = "picture-asthetics" src = "images/photo_of_me.png" height="340">
 </div>
 <p></p>
-<body class="text-center">If you ever need to contact me, you can use any of these methods:</body>
+<body class="text-center">If you ever need to contact me, you can use any of these methods
+    <br> or fill out the form below:</body>
 <h4 class="text-center">
-    Phone: (929) - 373 - 9027 
-    <br>Personal Email: kyleheaven8@gmail.com 
+    Personal Email: kyleheaven8@gmail.com 
     <br>School Email: kyleh61@nycstudents.nycstudents
     <br>STEAM Email: kheaven@brooklynsteamcenter.org
 </h4>
+    <body>
+
+
+        <form action = "https://us-central1-steam-center-app-dev.cloudfunctions.net/formToEmail"
+        method = "post">
+        <input name="send-to" value="kheaven@brooklynsteamcenter.org" hidden>
+
+            <div class = "text-center">
+                <label for = "gender">Gender: </label>
+                <select id = "gender" name = "gender">
+                    <option value = "Male">Male</option>
+                    <option value = "Female">Female</option>
+                    <option value = "Non-binary">Non-binary</option>
+                    <option value = "Rather Not Say">Rather Not Say</option>
+                </select>
+            </div>
+
+            <div>
+                <br>
+                <label for = "occupation">Occupation: </label>
+
+                <label for = "student">Student</label>
+                <input type = "radio" id = "student" name = "occupation" value = "student">
+
+                <label for = "teacher">Teacher</label>
+                <input type = "radio" id ="teacher" name = "occupation" value= "teacher">
+
+                <label for = "adult">Adult</label>
+                <input type = "radio"  id = "adult" name = "occupation" value = "adult">
+
+            </div>
+
+            <div>
+            <br>
+            <label for = "fname">First Name:</label>
+            <input type = "text" id = "fname" name = "fname" placeholder= "Frank" required>
+            </div>
+
+            <br>
+
+            <div>
+            <label for = "lname">Last Name:</label>
+            <input type = "text" id = "lname" name = "lname" placeholder= "Robinson" required>
+            </div>
+
+            <div>
+                <br>
+                <label for = "email">Email:</label>
+                <input type = "email" id = "email" name = "email" placeholder= "frobinson@gmail.com" required>
+            </div>
+
+            <div>
+                <br>
+                <label for = "pnumber">Phone Number (Optional):</label>
+                <input type = "number" id = "pnumber" name = "pnumber" placeholder = "XXX-XXX-XXXX" >
+            </div>
+
+            <div>
+                <br>
+                <input type = "submit">
+            </div>
+
+            <div>
+                <br>
+                <input type = "reset">
+            </div>
+
+
+
+        </form>
+
+
+
+    </body>
 </html>
