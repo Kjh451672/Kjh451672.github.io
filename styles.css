@@ -13,7 +13,8 @@ body {
 body {
     font-family: 'Rubik Pixels', sans-serif;
     font-weight: bold;
-    margin: 20px
+    margin: 20px;
+    text-align: center;
 }
 main{
     margin-left:20px;
@@ -95,4 +96,8 @@ a:hover{
 
 p:last-child{
     color:rgb(140, 151, 226)
+}
+
+i{
+    margin-right:20px;
 }
