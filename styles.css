@@ -10,12 +10,14 @@ body {
     background-color: rgb(32, 54, 136); /* page color */
     color: rgb(160, 220, 249); 
 }
+
 body {
     font-family: 'Rubik Pixels', sans-serif;
     font-weight: bold;
     margin: 20px;
     text-align: center;
 }
+
 main{
     margin-left:20px;
     margin-right: 20px;
@@ -34,13 +36,10 @@ h1{
     border-radius:20px;
 }
 
-
-
 .navbar{
     position: sticky;
     top: 0px;
 }
-
 
 .navbar ul{
     list-style-type: none;
@@ -61,7 +60,6 @@ li:nth-child(even){
     text-decoration: none;
 }
 
-
 .navbar a{
     padding: 15px;
     display: block;
@@ -74,10 +72,10 @@ li:nth-child(even){
 }
 
 .navbar li{
-    float:left;
+    /* float:left; */
     font-size:20px;
-    margin-left: 60px;
-    margin-right: 70px;
+    margin-right:100px;
+    display: inline-block;
 }
 
 .sticky-navbar{
@@ -100,4 +98,17 @@ p:last-child{
 
 i{
     margin-right:20px;
+}
+
+@media (max-width:600px){
+    body{
+        background-color: rgb(15, 40, 129); 
+        font-size: 1.25rem;
+    }
+}
+
+@media(max-width:480px){
+    .navbar li{
+        margin-right:0px;
+    }
 }
