@@ -69,6 +69,10 @@ a:visited{
     color:rgb(121, 184, 251);
 }
 
+a:link{
+    color:cyan
+}
+
 a:hover{
     color:aquamarine;
 }
